@@ -94,5 +94,5 @@ pin to the new commit.
 
 ## Versions
 
-Releases are tagged `v<major>.<minor>.<patch>`; this is `v1.0.0` (the profile moved here from
+Releases are tagged `v<major>.<minor>.<patch>`; this is `v1.0.1` (core v3.0.0); `v1.0.0` (the profile moved here from
 thug2-level-converter-core's `compat/`, with its history). The repositories that use it pin the tagged commit.
