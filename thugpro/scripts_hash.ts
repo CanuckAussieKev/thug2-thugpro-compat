@@ -3,14 +3,14 @@
 // kReleaseScriptsHash). Run it after THUGPRO updates and, if it differs, update the constant (or set
 // [online] thugpro_scripts_hash=<hex> in thug2-decomp.ini).
 //
-//   node compat/thugpro/scripts_hash.ts [<THUGPRO folder>]     (default: %LOCALAPPDATA%\THUG Pro)
+//   node thugpro/scripts_hash.ts [<THUGPRO folder>]     (default: %LOCALAPPDATA%\THUG Pro)
 
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as zlib from "node:zlib";
-import { helpFromHeader } from "../../lib/cli.ts";
-import { needDecomp } from "../../lib/decomp.ts";
+import { helpFromHeader } from "thug2-level-converter-core/lib/cli.ts";
+import { needDecomp } from "thug2-level-converter-core/lib/decomp.ts";
 
 // (the decomp's constant: lib/decomp.ts)
 const source = (): string =>

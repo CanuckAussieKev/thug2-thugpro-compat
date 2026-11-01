@@ -1,0 +1,47 @@
+{
+  "name": "thug2-thugpro-compat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "THUG2 THUGPRO Compatibility: the data that makes the THUG2 level converters' files agree with THUGPRO's for online play - the TP-n register, its data and the code that applies it (TypeScript, Node 24).",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanuckAussieKev/thug2-thugpro-compat.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    "./hand_edits.ts": {
+      "types": "./hand_edits.ts",
+      "default": "./hand_edits.js"
+    },
+    "./profile.ts": {
+      "types": "./profile.ts",
+      "default": "./profile.js"
+    },
+    "./thugpro_nodes.ts": {
+      "types": "./thugpro_nodes.ts",
+      "default": "./thugpro_nodes.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "commands": [
+    "thugpro/scripts_hash.ts"
+  ],
+  "scripts": {
+    "prepare": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "test": "node --test \"**/*.test.ts\""
+  },
+  "dependencies": {
+    "thug2-level-converter-core": "git+https://git@github.com/CanuckAussieKev/thug2-level-converter-core.git#6eb0072c42246017bbff6a441d1266485310b032"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}

@@ -2,8 +2,8 @@
 // thaw_levels/thugpro_compare.ts with the converters' split: the THPS3, THPS4, THUG1 and THUG2 THUGPRO tools and
 // the scenic art use them too).
 
-import * as qb from "../level_port/qb.ts";
-import { Name, type QbValue, Struct, Vector } from "../level_port/qb.ts";
+import * as qb from "thug2-level-converter-core/level_port/qb.ts";
+import { Name, type QbValue, Struct, Vector } from "thug2-level-converter-core/level_port/qb.ts";
 
 export const TOLERANCE = 0.1; // units (the frames differ by under 1/32: ours in whole sixteenths)
 export const CTF_NAMES = [

@@ -1,0 +1,4 @@
+node_modules/
+out/
+# (made by npm install - tsconfig.build.json)
+*.js
