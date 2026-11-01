@@ -10,7 +10,7 @@
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as core from "thug2-level-converter-core/compat/compat.ts";
-import { pyStrRepr } from "thug2-level-converter-core/lib/py.ts";
+import { quotedText } from "thug2-level-converter-core/lib/text.ts";
 
 export { type Entry, OPS, type Op, Profile } from "thug2-level-converter-core/compat/compat.ts";
 
@@ -24,7 +24,7 @@ export const profileFolder = (): string => path.join(HERE, "thugpro");
 
 export function load(name: string): core.Profile {
     if (!(PROFILES as readonly string[]).includes(name)) {
-        throw new RangeError(`no compatibility profile ${pyStrRepr(name)} (${PROFILES.join(", ")})`);
+        throw new RangeError(`no compatibility profile ${quotedText(name)} (${PROFILES.join(", ")})`);
     }
     return name === "none" ? core.none() : new core.Profile(name, profileFolder());
 }
