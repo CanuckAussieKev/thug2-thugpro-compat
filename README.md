@@ -94,5 +94,5 @@ pin to the new commit.
 
 ## Versions
 
-Releases are tagged `v<major>.<minor>.<patch>`; this is `v1.0.4` (imports from core v5.0.0's numbers.ts / text.ts / json.ts / cli.ts (its py.ts split, names for what they do); behaviour unchanged); `v1.0.3` (core v4.0.0); `v1.0.2` (core v3.1.0 (Linux and macOS); CI on Windows, Linux and macOS); `v1.0.1` (core v3.0.0); `v1.0.0` (the profile moved here from
+Releases are tagged `v<major>.<minor>.<patch>`; this is `v1.0.5` (core v5.1.0 (killCommands skipGoalOnly); behaviour unchanged); `v1.0.4` (imports from core v5.0.0's numbers.ts / text.ts / json.ts / cli.ts (its py.ts split, names for what they do); behaviour unchanged); `v1.0.3` (core v4.0.0); `v1.0.2` (core v3.1.0 (Linux and macOS); CI on Windows, Linux and macOS); `v1.0.1` (core v3.0.0); `v1.0.0` (the profile moved here from
 thug2-level-converter-core's `compat/`, with its history). The repositories that use it pin the tagged commit.

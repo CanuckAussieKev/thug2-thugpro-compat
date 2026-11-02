@@ -1,6 +1,6 @@
 {
   "name": "thug2-thugpro-compat",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "type": "module",
   "description": "THUG2 THUGPRO Compatibility: the data that makes the THUG2 level converters' files agree with THUGPRO's for online play - the TP-n register, its data and the code that applies it (TypeScript, Node 24).",
@@ -37,7 +37,7 @@
     "test": "node --test \"**/*.test.ts\""
   },
   "dependencies": {
-    "thug2-level-converter-core": "git+https://git@github.com/CanuckAussieKev/thug2-level-converter-core.git#c10980836184700eed8acb551ddaebf854bd67d8"
+    "thug2-level-converter-core": "git+https://git@github.com/CanuckAussieKev/thug2-level-converter-core.git#7a3101dd570816ec5603c2e499bf6134217406fa"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
